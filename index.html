@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="css/home_page.css">
+
+	<script type="text/javascript">
+		
+		var nrImg = 3; //number of images
+		var IntSeconds = 4; //seconds between the images
+		
+		function Load(){
+
+			/** If more images are to be added:
+			
+			1-  add a img tag with Img++ at start of row div
+			2- add a list element in Scircles
+			3- add a p tag for the info of that pic
+			4- change the value of nrImg above.
+
+			**/
+
+			nrShown=0; //image visible
+			
+			Vect = new Array(nrImg + 10);
+			Vect[0] = document.getElementById("Img1");
+			Vect[0].style.visibility = "visible";
+
+			// when we do the "for" we start from 1.
+			document.getElementById("S" + 0).style.visibility = "visible";
+
+			for (var i = 1; i < nrImg; i++) {
+				Vect[i] = document.getElementById("Img" + (i+1));
+				document.getElementById("S" + i).style.visibility="visible";
+			};
+
+			 document.getElementById("S" + 0).style.backgroundColor = "rgba(255,255,255,0.9)";
+			 document.getElementById("SP" + nrShown).style.visibility="visible";
+
+
+			 myTime = setInterval(Timer,IntSeconds*1000);
+
+
+		} 
+
+		function Timer(){
+			nrShown++;
+
+			if(nrShown == nrImg){
+				nrShown=0;
+			}
+			Effect();
+		}
+
+		// image plus the effect
+		function Effect() {
+			for (var i = 0; i < nrImg; i++) {
+
+				Vect[i].style.opacity= "0"; // to add the fade effect 
+				Vect[i].style.visibility="hidden";
+
+				document.getElementById("S" + i).style.backgroundColor = "rgba(0,0,0,0.7)";
+				document.getElementById("SP" + i).style.visibility="hidden";
+
+			};
+			Vect[nrShown].style.opacity= "1";
+			Vect[nrShown].style.visibility="visible";
+
+			document.getElementById("S" + nrShown).style.backgroundColor = "rgba(255,255,255,0.9)";
+			document.getElementById("SP" + nrShown).style.visibility="visible";
+		}
+
+		function prev(){
+
+			nrShown--;
+
+			if(nrShown == -1){
+				nrShown=nrImg-1;
+			}
+			Effect();
+
+			clearInterval(myTime);
+			myTime = setInterval(Timer,IntSeconds*1000);
+		}
+
+
+		//next image
+		function next(){
+			nrShown++;
+
+			if(nrShown == nrImg){
+				nrShown=0;
+			}
+			Effect();
+
+			clearInterval(myTime);
+			myTime = setInterval(Timer,IntSeconds*1000);
+		}
+
+	</script>
+</head>
+
+<body onload="Load()">
+
+<header>
+	<!--The quidditch league logo-->
+	<div class="logo"> 
+		<a href="index.html">
+			<img src="images/1000_2.png">
+		</a>
+
+	</div>
+
+	<!-- Clear the float before moving onto the nav bar-->
+	<div style="clear:both;"></div>
+
+	<div class="menu_wrapper">
+
+		<div class="nav_bar">
+
+			<ul>
+				<li>
+					<a href="index.html"> Home </a>
+				</li>
+				<li>
+					<a href="Draw.html"> Draw/Results </a>
+				</li>	
+				<li>
+					<a href="Standings.html"> Standings </a>
+				</li>
+				<li>
+					<a href="Documentation.html"> Documentation </a>
+				</li>
+				<li>
+					<a href="Documentation.html"> Usability Test Report </a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+</header>
+
+
+<!--shows information on the current games-->
+
+<div class="main_story">
+	<div class="row">
+		
+		<img id="Img2" src="images/punited.jpg">
+		<img id="Img3" src="images/pitch.jpg">
+		<img id="Img1" src="images/broomsticks.jpg">
+	</div>
+
+	<div id="Snav">
+		<div id="SnavUp">
+			<div id="Scircles">
+				<ul>
+					<li id="S0"></li>
+					<li id="S1"></li>
+					<li id="S2"></li>
+				</ul>
+			</div>
+			
+		</div>
+		<div id="SnavMiddle">
+			<img id="Sleft" src="images/icons/left_2.png" onclick="prev()">
+			<img id="Sright" src="images/icons/right_2.png" onclick="next()">
+		</div>
+
+		<!-- info-->
+		<div id="SnavBottom">
+			<p id="SP0">Choose from a wide range of broomsticks for your upcoming games!</p>
+			<p id="SP1">Have a chance to meet professional league players! Maybe even get selected for tryouts!</p>
+			<p id="SP2">Play games at official quidditch grounds!</p>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- clear the style of any floats before moving on to next part-->
+<div style="clear:both;"></div>
+
+<div class="footer">
+
+	<!-- have latest info on left-->
+	<div class="left">
+		<h2>Latest Updates</h2>
+		<div class="latest_updates">
+			<ul class="list_updates">
+				<li>
+					Your (Death Eaters) next game is against Dumbeldore's Army!
+				</li>
+				<br />
+				<li>
+					Ronnie Watson was involved in a mid air collision and broke 2 bones!
+				</li>
+				<br />
+				<li>
+					Meet Harry Potter, Ginny Potter and Ron Weasly at the quidditch fair!
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- have contact info on right-->
+	<div class="right">
+		<h2>Contact Us</h2>
+		<div class="post">
+			<div class="post_wrapper">
+				<div class="address">
+					Address: Quidditch League Association, London, UK 
+				</div>
+				<div class="complaints">
+					Please send complaints, to the address mentioned above. (Please use an owl)
+				</div>
+				<div class="copyright">
+					COPYRIGHT- All material used is not for commercial purposes. All credit to creators of the external content used.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

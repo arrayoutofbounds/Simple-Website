@@ -1,0 +1,308 @@
+body{
+	background: url(../images/shattered.png);
+	overflow: scroll;
+}
+
+.logo{
+	float: left;
+	top: 20px;
+	margin: 5px 5px 5px 5px;
+	position: relative;
+	z-index: 1;
+
+	border-width: 2px;
+    border-bottom-width:2px;
+    border-bottom-color:Black;
+    border-bottom-style: solid;
+    width: 100%;
+}
+
+.menu_wrapper{
+	position: relative;
+	top: 20px;
+	left: 0px;
+	margin-bottom: 10px;
+}
+
+.nav_bar {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+	border: none;
+}
+
+.nav_bar ul {
+	background: #30A6E6;
+	display: table-row;
+}
+.nav_bar li {
+	display: table-cell;
+	margin: 0;
+}
+
+.nav_bar a {
+	background: #30A6E6;
+	color: #FFFFFF;
+	display: block;
+	font: bold 14.5px/20px sans-serif;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.nav_bar li:hover a {
+	background: #000000;
+}
+
+.main_story{
+	position: relative;
+	background: url(../images/background.png);
+	margin-top: 20px;
+	width: 100%;
+	height: 400px;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.row img{
+	/* Overlays image*/
+    margin: 0 auto;
+	height: 100%;
+	width: 70%;
+	position: absolute;
+	top: 0;
+	left: 100px;
+	right: 100px;
+	transition: 1s;
+	visibility: hidden;
+	/** we want to show only one image at a time**/
+}
+
+#Snav{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#SnavUp{
+	display: block;
+	width: 100%;
+	height: 20%;
+}
+
+#Scircles{
+	background-color: none;
+	display: block;
+	width: 5%;
+	height: 15%;
+	margin-right: 5%;
+	margin-top: 2%;
+	float: right;
+}
+
+#Scircles ul{
+	margin:0;
+	float: right;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#Scircles li{
+	list-style: none;
+	display: block;
+	background-color: rgba(0,0,0,0.7);
+	width: 25%;
+	height: 100%;
+	margin-left: 5%;
+	float: left;
+
+	visibility: hidden;
+
+	border-bottom-left-radius: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-top-right-radius: 25px;
+
+}
+
+#SnavMiddle{
+	display: block;
+	height: 15%;
+	width: 100%;
+	margin-top: 10%; /** this is upto you and where you want to display the buttons**/
+}
+
+/** left button **/
+#Sleft{
+	width: 8%;
+	height: 100%;
+	float: left;
+	margin-left: 3%;
+	opacity: 0.5;
+}
+
+#Sleft :hover{
+	opacity: 0.8;
+}
+
+/** right button **/
+#Sright{
+	width: 8%;
+	height: 100%;
+	float: right;
+	margin-left: 3%;
+	margin-right: 3%;
+	opacity: 0.5;
+}
+
+#Sright :hover{
+	opacity: 0.8;
+}
+
+/** now we add the info at the bottom of the slider**/
+
+#SnavBottom{
+	display: block;
+	background-color: rgba(0,0,0,0.8);
+	width: 100%;
+	height: 10%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
+}
+
+#SnavBottom p{
+	font: normal 100% Cambria;
+	color: #fff;
+	position: absolute;
+	top: 0px;
+	bottom: 5px;
+	left: 400px;
+	margin-left: 0%;
+	visibility: hidden;
+	z-index: 50; /** makes sure that the text is always shown at the top**/
+}
+
+.footer{
+	position: relative;
+	width: 100%;
+    margin: 0 auto;
+    height: 120px;
+    display: block;
+    height: 100%;
+}
+
+.left{
+	float: left;
+	width: 49%;
+	height: 100%;
+	border-radius: 25px;
+    border: 3px solid black;
+    background-image: url(../images/notebook.png);
+}
+
+.right{
+	float: right;
+	width: 49%;
+	height: 100%;
+	border-radius: 25px;
+    border: 3px solid black;
+    background-image: url(../images/notebook.png);
+}
+
+.left h2{
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	color: white;
+	font-weight: bold;
+	letter-spacing: .1em;
+	font-size: 20px;
+	text-align: center;
+	background-color: #00688B;
+	height: 30px;
+	margin-top: 0.1px;
+	border-radius: 25px;
+	padding: 5px;
+}
+
+.latest_updates{
+	margin: 50px;
+	margin-top: 10px;
+}
+
+.list_updates{
+	margin:0;
+	padding: 0;
+}
+
+.list_updates li{
+	font-family: Georgia,serif;
+	display: list-item;
+	text-align: center;
+	color: black;
+	left: 10px;
+	list-style-image: url(../images/icons/broomstick_icon.png);
+}
+
+.right h2{
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	color: white;
+	font-weight: bold;
+	letter-spacing: .1em;
+	font-size: 20px;
+	text-align: center;
+	background-color: #00688B;
+	height: 30px;
+	margin-top: 0.1px;
+	border-radius: 25px;
+	padding: 5px;
+}
+
+.post{
+	margin-top: 20px;
+	height: 100%;
+}
+
+.post_wrapper{
+	margin: 0;
+	padding: 0px;
+	height: 100%;
+}
+
+.address{
+	font-family: Georgia,serif;
+	text-align: center;
+	color: black;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.complaints{
+	font-family: Georgia,serif;
+	text-align: center;
+	color: black;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.copyright{
+	font-family: Georgia,serif;
+	text-align: center;
+	color: black;
+	padding: 10px;
+	margin-bottom: 35px;
+}
+
+

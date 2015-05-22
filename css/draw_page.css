@@ -1,0 +1,327 @@
+body{
+    background: url(../images/shattered.png);
+    overflow: scroll;
+}
+
+.logo{
+    float: left;
+    top: 20px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+    z-index: 1;
+
+    border-width: 2px;
+    border-bottom-width:2px;
+    border-bottom-color:Black;
+    border-bottom-style: solid;
+    width: 100%;
+}
+
+.menu_wrapper{
+    position: relative;
+    top: 20px;
+    left: 0px;
+    margin-bottom: 10px;
+}
+
+.nav_bar {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.nav_bar ul {
+    background: #30A6E6;
+display: table-row;
+}
+.nav_bar li {
+display: table-cell;
+margin: 0;
+}
+
+.nav_bar a {
+    background: #30A6E6;
+    color: #FFFFFF;
+    display: block;
+    font: bold 12px/20px sans-serif;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+.nav_bar li:hover a {
+    background: #000000;
+}
+
+.main_story{
+    position: relative;
+    background: url(../images/notebook.png);
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/** put the css for the table after this**/
+.datagrid table { 
+    text-align: left;
+    width: 100%;
+    height: 100%; 
+    padding: 10px;
+    top: 10px; 
+    border-radius: 25px;
+    border: 3px solid black;
+    background-image: url(../images/notebook.png);
+}
+
+
+.datagrid {
+    font: normal 12px/150% Arial, Helvetica, sans-serif;
+    background-image: url(../images/notebook.png); 
+    overflow: hidden;  
+}
+    
+.datagrid table td, .datagrid table th {
+     padding: 3px 10px; 
+}
+
+.datagrid table thead th {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+    background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+    background-color:#006699;
+    color:#FFFFFF;
+    font-size: 15px; 
+    font-weight: bold; 
+    border-left: 1px solid #0070A8;
+} 
+
+.datagrid table thead th:first-child { 
+    border: none; 
+}
+
+.datagrid table tbody td { 
+    color: #00557F;
+
+    /**border-left: 4px solid #E1EEF4;**/
+
+    font-size: 14px;font-weight: normal;
+}
+
+.datagrid table tbody .alt td { 
+    /**background: #E1EEf4; **/
+    color: #00557F; 
+}
+
+.datagrid table tbody td:first-child {
+     border-left: none; 
+}
+
+.datagrid table tbody tr:last-child td { 
+    border-bottom: none;
+}
+
+.datagrid table tfoot td div { 
+    border-top: 1px solid #006699;
+    /**background: #E1EEf4;**/
+} 
+
+.datagrid table tfoot td { 
+    padding: 0; 
+    font-size: 12px 
+}
+
+.datagrid table tfoot td div{ 
+    padding: 2px; 
+}
+
+.datagrid table tfoot td ul { 
+    margin: 0; 
+    padding:0; 
+    list-style: none; 
+    text-align: right; 
+}
+.datagrid table tfoot  li { 
+    display: inline; 
+}
+
+.datagrid table tfoot li a { 
+    text-decoration: none; 
+    display: inline-block; 
+    padding: 2px 8px; 
+    margin: 1px;
+    color: #FFFFFF;
+    border: 1px solid #006699;
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );
+    background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+    background-color:#006699; 
+}
+
+.datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover { 
+    text-decoration: none;
+    border-color: #00557F; 
+    color: #FFFFFF; 
+    background: none; 
+    background-color:#006699;
+}
+
+div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }
+
+
+.datagrid{
+
+    height: 100%;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.draw{
+    text-align: center;
+}
+
+#paging{
+    float: right;
+    width:44%;
+}
+
+#info{
+    float: left;
+    width:55%;
+}
+
+.fifth_row{
+    background-color: #F5F5F5;
+}
+
+.table_body{
+    text-align: center;
+}
+
+.headings{
+    text-align: center;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 120px;
+    display: block;
+    height: 100%;
+}
+
+.left{
+    float: left;
+    width: 49%;
+    height: 100%;
+    border-radius: 25px;
+    border: 3px solid black;
+    background-image: url(../images/notebook.png);
+}
+
+.right{
+    float: right;
+    width: 49%;
+    height: 100%;
+    border-radius: 25px;
+    border: 3px solid black;
+    background-image: url(../images/notebook.png);
+}
+
+.left h2{
+    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+    color: white;
+    font-weight: bold;
+    letter-spacing: .1em;
+    font-size: 20px;
+    text-align: center;
+    background-color: #00688B;
+    height: 30px;
+    margin-top: 0.1px;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.latest_updates{
+    margin: 50px;
+    margin-top: 10px;
+}
+
+.list_updates{
+    margin:0;
+    padding: 0;
+}
+
+.list_updates li{
+    font-family: Georgia,serif;
+    display: list-item;
+    text-align: center;
+    color: black;
+    left: 10px;
+    list-style-image: url(../images/icons/broomstick_icon.png);
+}
+
+.right h2{
+    font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+    color: white;
+    font-weight: bold;
+    letter-spacing: .1em;
+    font-size: 20px;
+    text-align: center;
+    background-color: #00688B;
+    height: 30px;
+    margin-top: 0.1px;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.post{
+    margin-top: 20px;
+    height: 100%;
+}
+
+.post_wrapper{
+    margin: 0;
+    padding: 0px;
+    height: 100%;
+}
+
+.address{
+    font-family: Georgia,serif;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.complaints{
+    font-family: Georgia,serif;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.copyright{
+    font-family: Georgia,serif;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+
