@@ -112,7 +112,9 @@ margin: 0;
 }
 
 .datagrid table tbody td { 
-    color: #00557F;
+   
+    /**color: #00557F;**/
+    color: black;
 
     /**border-left: 4px solid #E1EEF4;**/
 
