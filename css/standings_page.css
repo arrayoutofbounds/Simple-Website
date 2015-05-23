@@ -233,7 +233,6 @@ div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }
     float: left;
     width: 49%;
     height: 100%;
-    border-radius: 25px;
     border: 3px solid black;
     background-image: url(../images/notebook.png);
 }
@@ -242,7 +241,6 @@ div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }
     float: right;
     width: 49%;
     height: 100%;
-    border-radius: 25px;
     border: 3px solid black;
     background-image: url(../images/notebook.png);
 }
@@ -257,7 +255,6 @@ div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }
     background-color: #00688B;
     height: 30px;
     margin-top: 0.1px;
-    border-radius: 25px;
     padding: 5px;
 }
 
@@ -290,7 +287,6 @@ div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }
     background-color: #00688B;
     height: 30px;
     margin-top: 0.1px;
-    border-radius: 25px;
     padding: 5px;
 }
 
