@@ -186,7 +186,7 @@ body{
 }
 
 #SnavBottom p{
-	font: normal 100% Cambria;
+	font: normal 100% sans-serif;
 	color: #fff;
 	position: absolute;
 	top: 0px;
@@ -235,7 +235,6 @@ body{
 	height: 30px;
 	margin-top: 0.1px;
 	/**border-radius: 25px;**/
-	border-bottom: black, 1px;
 	padding: 5px;
 }
 
