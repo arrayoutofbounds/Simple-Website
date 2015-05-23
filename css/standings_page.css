@@ -41,7 +41,8 @@ margin: 0;
 }
 
 .nav_bar a {
-    background: #30A6E6;
+    /**background: #30A6E6;**/
+    background: #00688B;
     color: #FFFFFF;
     display: block;
     font: bold 14.5px/20px sans-serif;
