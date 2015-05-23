@@ -29,6 +29,62 @@ h1{
 	font-weight: bold;
 }
 
+#colour_scheme{
+	text-align: left;
+
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	margin: 50px;
+	margin-bottom: 10px;
+	padding: 0px 0px 6px 0px;
+	font-size: 25px;
+	line-height: 44px;
+	letter-spacing: .5px;
+	font-weight: bold;
+}
+
+#lines{
+	text-align: left;
+
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	margin: 50px;
+	margin-bottom: 10px;
+	padding: 0px 0px 6px 0px;
+	font-size: 25px;
+	line-height: 44px;
+	letter-spacing: .5px;
+	font-weight: bold;
+}
+
+#font_scheme{
+	text-align: left;
+
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	margin: 50px;
+	margin-bottom: 10px;
+	padding: 0px 0px 6px 0px;
+	font-size: 25px;
+	line-height: 44px;
+	letter-spacing: .5px;
+	font-weight: bold;
+}
+
+#anl{
+	text-align: left;
+
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	margin: 50px;
+	margin-bottom: 10px;
+	padding: 0px 0px 6px 0px;
+	font-size: 25px;
+	line-height: 44px;
+	letter-spacing: .5px;
+	font-weight: bold;
+}
+
 p{
 	text-align: left;
 	color: black;
@@ -36,6 +92,9 @@ p{
 	margin-left: 50px;
 }
 
+#sub1,#sub2{
+	font-style: italic;
+}
 
 hr.style-seven {
     height: 30px;
