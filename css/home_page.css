@@ -235,7 +235,7 @@ body{
 	height: 30px;
 	margin-top: 0.1px;
 	/**border-radius: 25px;**/
-	border-bottom: black;
+	border-bottom: black, 1px;
 	padding: 5px;
 }
 
