@@ -208,7 +208,7 @@ body{
 
 .left{
 	float: left;
-	width: 50%;
+	width: 49.9%;
 	height: 100%;
 	/**border-radius: 25px;**/
     border: 2px solid black;
@@ -217,7 +217,7 @@ body{
 
 .right{
 	float: right;
-	width: 50%;
+	width: 49.9%;
 	height: 100%;
 	/**border-radius: 25px;**/
     border: 2px solid black;
