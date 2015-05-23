@@ -32,8 +32,7 @@ body{
 }
 
 .nav_bar ul {
-	/**background: #30A6E6;**/
-	background: #00688B;
+	background: #30A6E6;
 	display: table-row;
 }
 .nav_bar li {
@@ -42,7 +41,8 @@ body{
 }
 
 .nav_bar a {
-	background: #30A6E6;
+	/**background: #30A6E6;**/
+	background: #00688B;
 	color: #FFFFFF;
 	display: block;
 	font: bold 14.5px/20px sans-serif;
