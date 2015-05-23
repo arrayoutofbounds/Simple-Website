@@ -231,17 +231,17 @@ div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }
 
 .left{
     float: left;
-    width: 49%;
+    width: 49.65%;
     height: 100%;
-    border: 3px solid black;
+    border: 2px solid black;
     background-image: url(../images/notebook.png);
 }
 
 .right{
     float: right;
-    width: 49%;
+    width: 49.65%;
     height: 100%;
-    border: 3px solid black;
+    border: 2px solid black;
     background-image: url(../images/notebook.png);
 }
 
