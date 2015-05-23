@@ -123,7 +123,8 @@ margin: 0;
 
 .datagrid table tbody .alt td { 
     /**background: #E1EEf4; **/
-    color: #00557F; 
+    /**color: #00557F; **/
+    color: black;
 }
 
 .datagrid table tbody td:first-child {
