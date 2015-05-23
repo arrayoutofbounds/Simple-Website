@@ -99,6 +99,20 @@ h1{
 	font-weight: bold;
 }
 
+#hosting{
+	text-align: left;
+
+	font-family: times, Times New Roman, times-roman, georgia, serif;
+	color: #444;
+	margin: 50px;
+	margin-bottom: 10px;
+	padding: 0px 0px 6px 0px;
+	font-size: 25px;
+	line-height: 44px;
+	letter-spacing: .5px;
+	font-weight: bold;
+}
+
 p{
 	text-align: left;
 	color: black;
