@@ -32,7 +32,8 @@ body{
 }
 
 .nav_bar ul {
-	background: #30A6E6;
+	/**background: #30A6E6;**/
+	background: #00688B;
 	display: table-row;
 }
 .nav_bar li {
