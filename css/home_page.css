@@ -211,7 +211,7 @@ body{
 	width: 49.5%;
 	height: 100%;
 	/**border-radius: 25px;**/
-    border: 1.5px solid black;
+    border: 2px solid black;
     background-image: url(../images/notebook.png);
 }
 
@@ -220,7 +220,7 @@ body{
 	width: 49.5%;
 	height: 100%;
 	/**border-radius: 25px;**/
-    border: 1.5px solid black;
+    border: 2px solid black;
     background-image: url(../images/notebook.png);
 }
 
